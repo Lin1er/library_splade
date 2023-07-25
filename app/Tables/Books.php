@@ -48,10 +48,11 @@ class Books extends AbstractTable
     public function configure(SpladeTable $table)
     {
         $table
-            ->withGlobalSearch(columns: ['id'])
+            ->withGlobalSearch(columns: ['title', 'author'])
             ->column('id', sortable: true)
             ->column('title')
             ->column('author')
+            ->column('actions', exportAs: false)
             ->paginate(15);
 
             // ->searchInput()

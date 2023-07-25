@@ -6,7 +6,7 @@
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <x-splade-link href="{{ route('books.create') }}" class="p-4 bg-green-500 rounded">Create User</x-splade-link>
+            <x-splade-link href="{{ route('books.create') }}" class="p-4 bg-green-500 rounded">Input Books</x-splade-link>
             <x-splade-table :for="$books" pagination-scroll="reserve">
                 <x-splade-cell actions>
                     <Link href="/books/{{ $item->id }}/edit" class="bg-orange-500 p-2 font-bold text-white rounded"> Edit </Link>
